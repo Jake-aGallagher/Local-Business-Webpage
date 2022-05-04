@@ -1,0 +1,79 @@
+.navBar {
+    background-color: transparent;
+    height: 8vh;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+margin-left: 10vw;
+margin-right: auto;
+}
+
+.menu {
+margin-right: 5vw;
+}
+
+.menu:hover {
+    cursor: pointer;
+    color: rgb(146, 82, 82);
+    transition: 0.3s ease;
+}
+
+.dropdown {
+    display: block;
+    position: absolute;
+    margin-top: 0vh;
+    left: 0px;
+    right: 0px;
+    width: auto;
+    background-color: white;
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0vw;
+    color: black;
+    font-size: large;
+    
+}
+
+.menuDiv {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+}
+
+.menuDiv:hover{
+    cursor: pointer;
+}
+
+.menuPlus {
+    position: absolute;
+    right: 8vw;
+    font-size: 30px;
+}
+
+.menuSegment {
+    padding-left: 0vw;
+    background-color: rgb(224, 224, 224);
+}
+
+li {
+    margin: 0px;
+    height: 6vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2vh;
+}
+
+li:hover {
+    color: rgb(146, 82, 82);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
