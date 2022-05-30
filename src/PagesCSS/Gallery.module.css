@@ -1,0 +1,12 @@
+.header {
+    background-color: black;
+    margin-top: 0;
+    padding: 10px;
+    font-weight: 200;
+}
+
+img {
+    max-width: 90vw;
+    max-height: 80vh;
+    margin: 5px;
+}

@@ -1,5 +1,5 @@
 .navBar {
-    background-color: transparent;
+    background-color: black;
     height: 8vh;
     padding: 5px;
     display: flex;
@@ -62,7 +62,7 @@ margin-right: 5vw;
     background-color: rgb(224, 224, 224);
 }
 
-li {
+.li {
     margin: 0px;
     height: 6vh;
     border: 1px solid black;
@@ -72,7 +72,7 @@ li {
     padding-left: 2vh;
 }
 
-li:hover {
+.li:hover {
     color: rgb(146, 82, 82);
     transition: 0.3s ease;
     cursor: pointer;

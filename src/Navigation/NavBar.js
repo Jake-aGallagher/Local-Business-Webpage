@@ -27,8 +27,8 @@ const NavBar = () => {
         {/* First Dropdown Bar */}
         {showServices && (
           <ul className={classes.dropdown}>
-            <li>Home</li>
-            <li>
+            <li className={classes.li}>Home</li>
+            <li className={classes.li}>
               <div onClick={menusHandler} className={classes.menuDiv}>
                 <p>Menu</p>
                 <p className={classes.menuPlus}>{showMenus ? "-" : "+"}</p>
@@ -38,16 +38,15 @@ const NavBar = () => {
             {/* Second Dropdown Bar */}
             {showMenus && (
               <ul className={classes.menuSegment}>
-                <li>Standard Menu</li>
-                <li>Lunch Menu</li>
-                <li>Drinks Menu</li>
-                <li>Party Menu</li>
+                <li className={classes.li}>Standard Menu</li>
+                <li className={classes.li}>Lunch Menu</li>
+                <li className={classes.li}>Drinks Menu</li>
               </ul>
             )}
 
-            <li>Gallery</li>
-            <li>Reservation</li>
-            <li>Contact Us</li>
+            <li className={classes.li}>Gallery</li>
+            <li className={classes.li}>Reservation</li>
+            <li className={classes.li}>Contact Us</li>
           </ul>
         )}
       </div>

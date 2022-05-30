@@ -1,6 +1,6 @@
 import React from "react";
-import ReservationForm from "./ReservationForm";
-import classes from "./ReservationPage.module.css";
+import ReservationForm from "../Reservation/ReservationForm";
+import classes from "../PagesCSS/ReservationPage.module.css";
 
 const ReservationPage = () => {
   return (

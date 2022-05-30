@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.header{
+    font-weight: 200;
+    background-color: black;
+    width: 100vw;
+    height: 15vh;
+    margin-top: 0;
+    padding-top: 5vh;
+}
+
+.call{
+    color: black;
+    margin-bottom: 5vh;
+}
+
+.find{
+    color: black;
+    margin-bottom: 5vh;
+}
+
+.formTitle{
+    color: black;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85vw;
+    height: 40vh;
+}
+
+.formElements{
+    border: 2px solid rgb(69, 69, 69);
+    border-radius: 3px;
+    margin: 0 0  4px 0;
+}
+
+.formSubmit{
+    margin: 0;
+    height: 4vh;
+    border: 2px solid rgb(69, 69, 69);
+    border-radius: 20px;
+    padding: 2px;
+    background-color: rgb(145, 29, 9);
+    font-size: 18px;
+}
+
+.formSubmit:hover{
+    background-color: rgb(161, 74, 47);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.map{
+    margin: 30px;
+}
