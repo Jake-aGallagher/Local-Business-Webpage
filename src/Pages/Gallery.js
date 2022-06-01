@@ -11,11 +11,11 @@ const Gallery = () => {
   return (
     <div>
       <h1 className={classes.header}>Discover our Gallery</h1>
-      <img src={tables} alt="Well presented tables in a romantically lit, cozy setting." />
-      <img src={meatballs} alt="Delicious meatballs on a bed of plain spaghetti." />
-      <img src={pasta} alt="Fantastic pasta topped with herbs and sliced olives." />
-      <img src={meatWithPotatoes} alt="Filling slices of meat with roast potatoes and side salad." />
-      <img src={mozzarella} alt="Slices of gooey Mozzarella with tangy tomatoes." />
+      <img className={classes.img} src={tables} alt="Well presented tables in a romantically lit, cozy setting." />
+      <img className={classes.img} src={meatballs} alt="Delicious meatballs on a bed of plain spaghetti." />
+      <img className={classes.img} src={pasta} alt="Fantastic pasta topped with herbs and sliced olives." />
+      <img className={classes.img} src={meatWithPotatoes} alt="Filling slices of meat with roast potatoes and side salad." />
+      <img className={classes.img} src={mozzarella} alt="Slices of gooey Mozzarella with tangy tomatoes." />
     </div>
   );
 };

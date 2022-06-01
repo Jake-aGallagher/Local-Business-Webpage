@@ -16,9 +16,10 @@ const center = {
 function Maps() {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyC_yGf0uSQJr3QNT-_GMlK1RzEeqdykvOw",
+    googleMapsApiKey: "",
   });
 
+  // eslint-disable-next-line
   const [map, setMap] = React.useState(null);
 
   const onLoad = React.useCallback(function callback(map) {

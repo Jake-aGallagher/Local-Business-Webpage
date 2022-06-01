@@ -1,0 +1,168 @@
+.container {
+  top: "0";
+  left: "0";
+}
+
+.firstImgCont {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  z-index: -100;
+}
+
+.firstImg {
+  object-fit: cover;
+  margin: 0;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(70%);
+}
+
+.firstText {
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+  width: 80vw;
+  font-weight: 500;
+  z-index: -90;
+}
+
+.title {
+  font-size: 80px;
+  margin-bottom: 15vh;
+}
+
+.desc {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.bookTableButton{
+    height: 4vh;
+    width: 30vw;
+    border: 2px solid rgb(69, 69, 69);
+    border-radius: 20px;
+    padding: 2px;
+    background-color: rgb(145, 29, 9);
+    font-size: 18px;
+    color: white;
+}
+
+.bookTableButton:hover{
+    background-color: rgb(161, 74, 47);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.secondCont {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.galleryImgTitle {
+  margin-top: 7vh;
+  height: 7vh;
+  font: 30px;
+  border: 1px solid rgb(145, 29, 9);
+  width: 80vw;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.galleryImg {
+  height: 35vh;
+  width: 80vw;
+  object-fit: cover;
+  margin: 5px;
+}
+
+@media screen and (min-width: 700px) {
+  .images {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .galleryImg {
+    height: 70vh;
+    width: auto;
+  }
+}
+
+.pastaImg{
+    z-index: -90;
+}
+
+.pastaImg img{
+  z-index: -90;
+  min-width: 100vw;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.thirdCont {
+    background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info{
+    margin-top: 3vh;
+    width: 80vw;
+    height: 35vh;
+    margin-bottom: 0;
+}
+
+.miniImg{
+    margin: 0 10px 0 10px;
+    font-size: 35px;
+}
+
+.topLine{
+font-size: 20px;
+margin: 0 10px 1vh 10px;
+}
+
+.bottomLine{
+font-size: 25px;
+margin: 0 10px 3vh 10px;
+}
+
+@media screen and (min-width: 1000px){
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .miniImg{
+        font-size: 50px;
+    }
+    .topLine{
+        font-size: 30px;
+    }
+    .bottomLine{
+        font-size: 35px;
+    }
+}
+
+.form{
+    margin-top: 0;
+}

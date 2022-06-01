@@ -34,6 +34,7 @@ const MenuItems = (props) => {
         });
       }
 
+      
       setItems(loadedItems);
       console.log(items);
       setIsLoading(false);
@@ -43,6 +44,7 @@ const MenuItems = (props) => {
       setIsLoading(false);
       setHttpError(error.message);
     });
+    //eslint-disable-next-line
   }, [props]);
 
   const itemsList = items.map((item) => (
