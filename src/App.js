@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import "./App.css";
 
@@ -20,6 +20,7 @@ function App() {
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Reservation" element={<ReservationPage />} />
         <Route path="/ContactUs" element={<ContactUs />} />
+        <Route path="*" element={<Navigate to="/"/>} />
       </Routes>
       <Footer />
     </div>
