@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Local-Business-Webpage/static/css/main.45e59469.css",
-    "main.js": "/Local-Business-Webpage/static/js/main.0bca422f.js",
+    "main.js": "/Local-Business-Webpage/static/js/main.c1cb4113.js",
     "static/media/Pasta-dish.jpg": "/Local-Business-Webpage/static/media/Pasta-dish.278f6618e3bd2ca9fd94.jpg",
     "static/media/Restaurant-setting.jpg": "/Local-Business-Webpage/static/media/Restaurant-setting.ae2d3cab2227c903f22c.jpg",
     "static/media/Mozzarella.jpg": "/Local-Business-Webpage/static/media/Mozzarella.0673cf52fd6844c112f7.jpg",
@@ -11,10 +11,10 @@
     "static/media/Tables.jpg": "/Local-Business-Webpage/static/media/Tables.0b49a86f4ab4161a8524.jpg",
     "index.html": "/Local-Business-Webpage/index.html",
     "main.45e59469.css.map": "/Local-Business-Webpage/static/css/main.45e59469.css.map",
-    "main.0bca422f.js.map": "/Local-Business-Webpage/static/js/main.0bca422f.js.map"
+    "main.c1cb4113.js.map": "/Local-Business-Webpage/static/js/main.c1cb4113.js.map"
   },
   "entrypoints": [
     "static/css/main.45e59469.css",
-    "static/js/main.0bca422f.js"
+    "static/js/main.c1cb4113.js"
   ]
 }
