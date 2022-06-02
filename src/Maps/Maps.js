@@ -1,6 +1,6 @@
 import React from "react";
-import { GoogleMap, useJsApiLoader, Marker, MarkerLabel } from "@react-google-maps/api";
-import classes from "./Maps.module.css"
+import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
+
 
 
 const containerStyle = {
@@ -27,8 +27,6 @@ function Maps() {
   const [map, setMap] = React.useState(null);
 
   const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(center);
-   /* map.fitBounds(bounds); */
    map.setCenter(center)
     setMap(map);
   }, []);
