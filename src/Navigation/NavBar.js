@@ -44,7 +44,7 @@ const NavBar = () => {
           <ul className={classes.dropdown}>
             <li>
               <NavLink
-                to="Local-Business-Webpage/"
+                to="/"
                 className={classes.li}
                 style={navActiveStyler}
                 onClick={showMenuHandler}
@@ -54,7 +54,7 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink
-                to="Local-Business-Webpage/Menu"
+                to="/Menu"
                 className={classes.li}
                 style={navActiveStyler}
                 onClick={showMenuHandler}
@@ -64,7 +64,7 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink
-                to="Local-Business-Webpage/Gallery"
+                to="/Gallery"
                 className={classes.li}
                 style={navActiveStyler}
                 onClick={showMenuHandler}
@@ -74,7 +74,7 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink
-                to="Local-Business-Webpage/Reservation"
+                to="/Reservation"
                 className={classes.li}
                 style={navActiveStyler}
                 onClick={showMenuHandler}
@@ -84,7 +84,7 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink
-                to="Local-Business-Webpage/ContactUs"
+                to="/ContactUs"
                 className={classes.li}
                 style={navActiveStyler}
                 onClick={showMenuHandler}
@@ -100,13 +100,13 @@ const NavBar = () => {
       {!showBurger && (
         <ul className={classes.menuSelections}>
           <li>
-            <NavLink to="Local-Business-Webpage/" className={classes.links} style={navActiveStyler}>
+            <NavLink to="/" className={classes.links} style={navActiveStyler}>
               Home
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="Local-Business-Webpage/Menu"
+              to="/Menu"
               className={classes.links}
               style={navActiveStyler}
             >
@@ -115,7 +115,7 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
-              to="Local-Business-Webpage/Gallery"
+              to="/Gallery"
               className={classes.links}
               style={navActiveStyler}
             >
@@ -124,7 +124,7 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
-              to="Local-Business-Webpage/Reservation"
+              to="/Reservation"
               className={classes.links}
               style={navActiveStyler}
             >
@@ -133,7 +133,7 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
-              to="Local-Business-Webpage/ContactUs"
+              to="/ContactUs"
               className={classes.links}
               style={navActiveStyler}
             >
