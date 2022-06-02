@@ -8,6 +8,6 @@ const Footer = () => {
       <p className={classes.bottom}>WEEKENDS: SAT-SUN 11:30 - 22:00</p>
     </div>
   );
-};
+}; 
 
 export default Footer;

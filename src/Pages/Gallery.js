@@ -9,7 +9,7 @@ import mozzarella from "../Images/Mozzarella.jpg";
 
 const Gallery = () => {
   return (
-    <div>
+    <div className={classes.container}>
       <h1 className={classes.header}>Discover our Gallery</h1>
       <img className={classes.img} src={tables} alt="Well presented tables in a romantically lit, cozy setting." />
       <img className={classes.img} src={meatballs} alt="Delicious meatballs on a bed of plain spaghetti." />

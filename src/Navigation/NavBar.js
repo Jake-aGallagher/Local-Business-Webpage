@@ -1,55 +1,100 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 import classes from "./NavBar.module.css";
 
 const NavBar = () => {
-  const [showServices, setShowServices] = useState(false);
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
   const [showMenus, setShowMenus] = useState(false);
 
-  const showServHandler = () => {
-    setShowServices(!showServices);
-  };
+  useEffect(() => {
+    window.addEventListener("resize", () => setWindowSize(window.innerWidth));
+  },[]);
 
-  const menusHandler = () => {
+  const showBurger = windowSize <= 700;
+
+  const showMenuHandler = () => {
     setShowMenus(!showMenus);
   };
+
+
+  const navActiveStyler = ({ isActive }) => {
+    return {
+      textDecoration: isActive ? "underline" : ""
+    }
+  }
 
   return (
     <div className={classes.navBar}>
       <h1 className={classes.logo}>Italia</h1>
 
-      {/* Menu Bar */}
-      <div >
-        <p onClick={showServHandler} className={classes.menu}>
-          &#9776; {showServices ? "Close" : "Menu"}
-        </p>
+      {showBurger && (
+        <button onClick={showMenuHandler} className={classes.showMenuButton}>
+          &#9776; Menu
+        </button>
+      )}
 
-        {/* First Dropdown Bar */}
-        {showServices && (
+      {showBurger && showMenus && (
+        <div>
           <ul className={classes.dropdown}>
-            <li className={classes.li}>Home</li>
-            <li className={classes.li}>
-              <div onClick={menusHandler} className={classes.menuDiv}>
-                <p>Menu</p>
-                <p className={classes.menuPlus}>{showMenus ? "-" : "+"}</p>
-              </div>
+            <li>
+              <NavLink to="/" className={classes.li} style={navActiveStyler} onClick={showMenuHandler}>
+                Home
+              </NavLink>
             </li>
-
-            {/* Second Dropdown Bar */}
-            {showMenus && (
-              <ul className={classes.menuSegment}>
-                <li className={classes.li}>Standard Menu</li>
-                <li className={classes.li}>Lunch Menu</li>
-                <li className={classes.li}>Drinks Menu</li>
-              </ul>
-            )}
-
-            <li className={classes.li}>Gallery</li>
-            <li className={classes.li}>Reservation</li>
-            <li className={classes.li}>Contact Us</li>
+            <li>
+              <NavLink to="/Menu" className={classes.li} style={navActiveStyler} onClick={showMenuHandler}>
+                Menu
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/Gallery" className={classes.li} style={navActiveStyler} onClick={showMenuHandler}>
+                Gallery
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/Reservation" className={classes.li} style={navActiveStyler} onClick={showMenuHandler}>
+                Reservation
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/ContactUs" className={classes.li} style={navActiveStyler} onClick={showMenuHandler}>
+                Contact Us
+              </NavLink>
+            </li>
           </ul>
-        )}
-      </div>
+        </div>
+      )}
+
+      {!showBurger && (
+        <ul className={classes.menuSelections}>
+          <li>
+            <NavLink to="/" className={classes.links} style={navActiveStyler}>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/Menu" className={classes.links} style={navActiveStyler}>
+              Menu
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/Gallery" className={classes.links} style={navActiveStyler}>
+              Gallery
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/Reservation" className={classes.links} style={navActiveStyler}>
+              Reservation
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/ContactUs" className={classes.links} style={navActiveStyler}>
+              Contact Us
+            </NavLink>
+          </li>
+        </ul>
+      )}
     </div>
   );
 };

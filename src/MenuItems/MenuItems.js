@@ -21,7 +21,6 @@ const MenuItems = (props) => {
       }
 
       const responseData = await response.json();
-      console.log("this is the response data", responseData);
 
       const loadedItems = [];
 
@@ -34,9 +33,7 @@ const MenuItems = (props) => {
         });
       }
 
-      
       setItems(loadedItems);
-      console.log(items);
       setIsLoading(false);
     };
 

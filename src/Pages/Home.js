@@ -9,11 +9,11 @@ import pastaDish from "../Images/Pasta-dish.jpg";
 import meatballs from "../Images/Meatballs.jpg";
 import mozzarella from "../Images/Mozzarella.jpg";
 
-const Home = () => {
+const Home = () => { 
   const ref = useRef();
 
   return (
-    <Parallax pages={2.95} className={classes.container} ref={ref}>
+    <Parallax pages={3.1} className={classes.container} ref={ref}>
       {/* This is the first page which contains the dining image */}
       <ParallaxLayer
         className={classes.firstImgCont}
@@ -27,7 +27,7 @@ const Home = () => {
             alt="An ambient restaurant bar"
           />
         </div>
-      </ParallaxLayer>
+      </ParallaxLayer> 
 
       {/* This is the title and opening text */}
       <ParallaxLayer offset={0} speed={0}>
@@ -84,13 +84,13 @@ const Home = () => {
         offset={2}
         speed={0.5}
         className={classes.thirdCont}
-        factor={0.9}
+        factor={1.05}
       >
         <div className={classes.info}>
           <div>
             <p className={classes.miniImg}>&#9993;</p>
             <p className={classes.topLine}>send us an Email</p>
-            <p className={classes.bottomLine}>Contact Us</p>
+            <p className={classes.bottomLine}><a href="mailto:jake.a.gallagher98@gmail.com" target="_blank">Contact Us</a></p>
           </div>
           <div>
             <p className={classes.miniImg}>&#9906;</p>
