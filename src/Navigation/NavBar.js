@@ -44,17 +44,17 @@ const NavBar = () => {
           <ul className={classes.dropdown}>
             <li>
               <NavLink
-                to="Italia/"
+                to="Local-Business-Webpage/"
                 className={classes.li}
                 style={navActiveStyler}
                 onClick={showMenuHandler}
               >
                 Home
-              </NavLink>
+              </NavLink> 
             </li>
             <li>
               <NavLink
-                to="Italia/Menu"
+                to="Local-Business-Webpage/Menu"
                 className={classes.li}
                 style={navActiveStyler}
                 onClick={showMenuHandler}
@@ -64,7 +64,7 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink
-                to="Italia/Gallery"
+                to="Local-Business-Webpage/Gallery"
                 className={classes.li}
                 style={navActiveStyler}
                 onClick={showMenuHandler}
@@ -74,7 +74,7 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink
-                to="Italia/Reservation"
+                to="Local-Business-Webpage/Reservation"
                 className={classes.li}
                 style={navActiveStyler}
                 onClick={showMenuHandler}
@@ -84,7 +84,7 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink
-                to="Italia/ContactUs"
+                to="Local-Business-Webpage/ContactUs"
                 className={classes.li}
                 style={navActiveStyler}
                 onClick={showMenuHandler}
@@ -100,13 +100,13 @@ const NavBar = () => {
       {!showBurger && (
         <ul className={classes.menuSelections}>
           <li>
-            <NavLink to="Italia/" className={classes.links} style={navActiveStyler}>
+            <NavLink to="Local-Business-Webpage/" className={classes.links} style={navActiveStyler}>
               Home
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="Italia/Menu"
+              to="Local-Business-Webpage/Menu"
               className={classes.links}
               style={navActiveStyler}
             >
@@ -115,7 +115,7 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
-              to="Italia/Gallery"
+              to="Local-Business-Webpage/Gallery"
               className={classes.links}
               style={navActiveStyler}
             >
@@ -124,7 +124,7 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
-              to="Italia/Reservation"
+              to="Local-Business-Webpage/Reservation"
               className={classes.links}
               style={navActiveStyler}
             >
@@ -133,7 +133,7 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
-              to="Italia/ContactUs"
+              to="Local-Business-Webpage/ContactUs"
               className={classes.links}
               style={navActiveStyler}
             >

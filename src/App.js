@@ -15,12 +15,12 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes> 
-        <Route path="Italia/" element={<Home />} />
-        <Route path="Italia/Menu" element={<Menu />} />
-        <Route path="Italia/Gallery" element={<Gallery />} />
-        <Route path="Italia/Reservation" element={<ReservationPage />} />
-        <Route path="Italia/ContactUs" element={<ContactUs />} />
-        <Route path="Italia/*" element={<Navigate to="/"/>} />
+        <Route path="Local-Business-Webpage/" element={<Home />} />
+        <Route path="Local-Business-Webpage/Menu" element={<Menu />} />
+        <Route path="Local-Business-Webpage/Gallery" element={<Gallery />} />
+        <Route path="Local-Business-Webpage/Reservation" element={<ReservationPage />} />
+        <Route path="Local-Business-Webpage/ContactUs" element={<ContactUs />} />
+        <Route path="Local-Business-Webpage/*" element={<Navigate to="Local-Business-Webpage/"/>} />
       </Routes>
       <Footer />
     </div>

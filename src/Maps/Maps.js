@@ -20,7 +20,7 @@ function Maps() {
   /* Maps API key scoped to this website only */
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "",
+    googleMapsApiKey: "AIzaSyD50oP5OgQ_mWGbtmsZ8PMW9s66OAFcBPw",
   });
 
   // eslint-disable-next-line
