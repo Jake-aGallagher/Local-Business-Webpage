@@ -46,10 +46,9 @@
 }
 
 .showMenuButton:hover {
-    color: rgb(146, 82, 82);
-    transition: 0.3s ease;
-} 
-
+  color: rgb(146, 82, 82);
+  transition: 0.3s ease;
+}
 
 .dropdown {
   display: block;
@@ -67,21 +66,19 @@
 }
 
 .li {
-    color: black;
-    margin: 0px;
-    height: 6vh;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 2vh;
-    text-decoration: none;
+  color: black;
+  margin: 0px;
+  height: 6vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2vh;
+  text-decoration: none;
 }
 
 .li:hover {
-    color: rgb(146, 82, 82);
-    transition: 0.3s ease;
-    cursor: pointer;
+  color: rgb(146, 82, 82);
+  transition: 0.3s ease;
+  cursor: pointer;
 }
-
-

@@ -9,6 +9,7 @@ const MenuItems = (props) => {
   useEffect(() => {
     const fetchItems = async () => {
       const response = await fetch(
+        /* Fetching the data depending on what Menu buttons have been selected in the parent component */
         "https://italia-fake-restaurant-project-default-rtdb.europe-west1.firebasedatabase.app/" +
           props.menuSelection +
           "/" +
@@ -41,8 +42,9 @@ const MenuItems = (props) => {
       setIsLoading(false);
       setHttpError(error.message);
     });
-    //eslint-disable-next-line
   }, [props]);
+
+  /* end of data fetching */
 
   const itemsList = items.map((item) => (
     <li key={item.id} className={classes.item}>
@@ -56,6 +58,7 @@ const MenuItems = (props) => {
     </li>
   ));
 
+  /* Showing the 'Loading' screen */
   if (isLoading) {
     return (
       <section>
@@ -64,6 +67,7 @@ const MenuItems = (props) => {
     );
   }
 
+  /* Showing the error */
   if (httpError) {
     return (
       <section>
@@ -71,6 +75,7 @@ const MenuItems = (props) => {
       </section>
     );
   } else {
+    /* Showing the content */
     return <ul className={classes.container}>{itemsList}</ul>;
   }
 };

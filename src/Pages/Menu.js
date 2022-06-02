@@ -6,6 +6,7 @@ const Menu = () => {
   const [menuSelection, setMenuSelection] = useState("Standard");
   const [sectionSelection, setSectionSelection] = useState("Antipasti");
 
+  /* Selectors for Menu choices and setting the sub-Menu choices to the defaul for that Menu */
   const mMenuHandler = () => {
     setMenuSelection("Standard");
     setSectionSelection("Antipasti");
@@ -21,6 +22,7 @@ const Menu = () => {
     setSectionSelection("Wine");
   };
 
+  /* Setting the sub-Menu selection (can use simple string because it hands this data to the 'MenuItems component to call the data) */
   const selectionHandler = (props) => {
     setSectionSelection(props);
   };
@@ -41,6 +43,7 @@ const Menu = () => {
       </div>
       <div className={classes.secondarySelectButtons}>
         {menuSelection === "Standard" ? (
+          /* Conditionally showing the sub-Menus for the Main menu */
           <div>
             <button
               className={classes.buttons}
@@ -62,6 +65,7 @@ const Menu = () => {
             </button>
           </div>
         ) : menuSelection === "Lunch" ? (
+          /* Conditionally showing the sub-Menus for the Lunch menu */
           <div>
             <button
               className={classes.buttons}
@@ -77,6 +81,7 @@ const Menu = () => {
             </button>
           </div>
         ) : (
+          /* Conditionally showing the sub-Menus for the Drinks menu */
           <div>
             <button
               className={classes.buttons}
@@ -99,6 +104,7 @@ const Menu = () => {
           </div>
         )}
       </div>
+      {/* Giving the Menu selection data to the child to retrieve from database */}
       <MenuItems
         menuSelection={menuSelection}
         sectionSelection={sectionSelection}

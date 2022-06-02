@@ -24,6 +24,7 @@ const ContactUs = () => {
     setMessage(event.target.value);
   };
 
+  /* To show the correct extrapolation of data from the form when submitted */
   const submitHandler = (event) => {
     event.preventDefault();
     if (name === "" || email === "" || conNum === "" || message === "") {
@@ -32,12 +33,20 @@ const ContactUs = () => {
       alert("check console log for form details");
       console.log(
         "{\n",
-        "{ Name:", name, "}\n",
-        "{ Email:", email, "}\n",
-        "{ Contact Number:" , conNum, "}\n",
-        "{ Message:" ,message, "}\n",
+        "{ Name:",
+        name,
+        "}\n",
+        "{ Email:",
+        email,
+        "}\n",
+        "{ Contact Number:",
+        conNum,
+        "}\n",
+        "{ Message:",
+        message,
+        "}\n",
         "}"
-        );
+      );
     }
   };
 

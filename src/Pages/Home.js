@@ -9,12 +9,13 @@ import pastaDish from "../Images/Pasta-dish.jpg";
 import meatballs from "../Images/Meatballs.jpg";
 import mozzarella from "../Images/Mozzarella.jpg";
 
-const Home = () => { 
+const Home = () => {
   const ref = useRef();
 
   return (
     <Parallax pages={3.1} className={classes.container} ref={ref}>
-      {/* This is the first page which contains the dining image */}
+      {/* 'Parallax' container is set to 3.1 pages as a workaround for the footer covering up content as the footer is set to a position absolute */}
+      {/* This is the first page which contains the dining image that is fixed in position */}
       <ParallaxLayer
         className={classes.firstImgCont}
         sticky={{ start: 0, end: 1 }}
@@ -27,9 +28,9 @@ const Home = () => {
             alt="An ambient restaurant bar"
           />
         </div>
-      </ParallaxLayer> 
+      </ParallaxLayer>
 
-      {/* This is the title and opening text */}
+      {/* This is the title and opening text  that scrolls at the normal speed*/}
       <ParallaxLayer offset={0} speed={0}>
         <div className={classes.firstText}>
           <h1 className={classes.title}>Italia Bedford</h1>
@@ -52,7 +53,7 @@ const Home = () => {
         </div>
       </ParallaxLayer>
 
-      {/* This is the second page containing menu info */}
+      {/* This is the second page containing menu info, scrolls slightly faster to give the effect it is flowig over the following page */}
       <ParallaxLayer
         offset={1}
         speed={0.5}
@@ -74,7 +75,7 @@ const Home = () => {
         </div>
       </ParallaxLayer>
 
-      {/* This is the scrolling picture of pasta */}
+      {/* This is the slow scrolling picture of pasta  underlaying the previous and next pages*/}
       <ParallaxLayer offset={1.6} speed={0} className={classes.pastaImg}>
         <img src={pastaDish} alt="plate of pasta" />
       </ParallaxLayer>
@@ -90,7 +91,15 @@ const Home = () => {
           <div>
             <p className={classes.miniImg}>&#9993;</p>
             <p className={classes.topLine}>send us an Email</p>
-            <p className={classes.bottomLine}><a href="mailto:jake.a.gallagher98@gmail.com" target="_blank">Contact Us</a></p>
+            <p className={classes.bottomLine}>
+              <a
+                href="mailto:jake.a.gallagher98@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Contact Us
+              </a>
+            </p>
           </div>
           <div>
             <p className={classes.miniImg}>&#9906;</p>

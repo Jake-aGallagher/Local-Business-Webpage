@@ -13,14 +13,14 @@
   justify-content: flex-start;
 }
 
-@media screen and (max-width: 450px ){
-  .footer{
+@media screen and (max-width: 450px) {
+  .footer {
     font-size: 13px;
   }
 }
 
-@media screen and (max-width: 340px){
-  .footer{
+@media screen and (max-width: 340px) {
+  .footer {
     font-size: 10px;
   }
 }

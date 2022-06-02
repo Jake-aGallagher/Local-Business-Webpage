@@ -25,7 +25,7 @@
 
 .primarySelectButtons {
   max-width: 1000px;
-  width: 100vw;
+  width: 90vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,7 +35,7 @@
 
 .secondarySelectButtons {
   max-width: 1000px;
-  width: 100vw;
+  width: 90vw;
   display: flex;
   flex-direction: row;
   justify-content: center;

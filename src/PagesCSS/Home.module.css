@@ -192,14 +192,13 @@
   }
 }
 
-.bottomLine a{
+.bottomLine a {
   color: black;
 }
 
-.bottomLine a:hover{
-  color: rgb(146, 82, 82);;
+.bottomLine a:hover {
+  color: rgb(146, 82, 82);
 }
-
 
 .form {
   margin-top: 0;
