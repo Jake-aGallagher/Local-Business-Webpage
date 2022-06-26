@@ -2,7 +2,7 @@
 
 [Link to Site](https://jake-agallagher.github.io/Local-Business-Webpage/)
 
-### created using react
+### created using react and Firebase realtime Database
 
 #### Other Dependancies:
 * react-google-maps/api
