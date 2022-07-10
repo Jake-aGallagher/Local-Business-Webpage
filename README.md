@@ -4,7 +4,7 @@
 
 ### created using react and Firebase realtime Database
 
-#### Other Dependancies:
+#### Other Dependencies:
 * react-google-maps/api
 * react-spring/parallax
 * react-router
